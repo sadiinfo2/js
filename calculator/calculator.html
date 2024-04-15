@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Simple Calculator</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="number" id="num1" class="form-control mb-2" placeholder="Enter first number">
+            </div>
+            <div class="col-md-3">
+                <select id="operation" class="form-control mb-2">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input type="number" id="num2" class="form-control mb-2" placeholder="Enter second number">
+            </div>
+            <div class="col-md-3">
+                <button id="calculateBtn" class="btn btn-primary btn-block mb-2">Calculate</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 offset-md-3">
+                <div id="result" class="alert alert-info" role="alert" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
